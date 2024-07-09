@@ -1,0 +1,327 @@
+html{
+scroll-behavior: smooth;
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    font-family:'Roboto Condensed', sans-serif;
+}
+
+img{
+    width: 100%;
+}
+/*--------------ARKA PLAN RENGİ------------*/
+section{
+    padding: 100px 0;
+    background: #022652;
+}
+
+.section_title h2{
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    transition: all .5s ease-in-out;
+    background: #022652;
+}
+
+/*--------------PALET RENGİ------------*/
+.section_title h2:hover{
+    background-color: #006aa6;
+    color: white;
+}
+/*--------------HEADER------------*/
+header{
+    background:black;
+    border-bottom: 1px solid rgba(238, 238, 238, 0.801);
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+
+#menu_bar{
+    display: none;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    padding: 10px 0;
+}
+.nav_links{
+display: flex;
+}
+
+.nav_links li a{
+   margin-left: 15px;
+   color: #fff;
+   padding: 5px 15px;
+   border-radius: 5px;
+   transition: all .5s ease-in-out;
+}
+.nav_links li a:hover{
+    background: aqua;
+}
+
+.logo h2 a {
+    color: aqua;
+    text-transform: uppercase;
+}
+
+/*ANASAYFA*/
+.inner_anasayfa{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+    color: #fff;
+}
+.child_anasayfa{
+    flex-basis: 45%;
+}
+/*ana sayfa başlığa renk vercem*/
+.child_anasayfa h1{
+    font-size: 50px;
+color: aqua;
+}
+.span_child{
+    color: aqua;
+}
+.child_anasayfa p{
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+.btn{
+    background: aqua;
+    padding: 12px 28px;
+    border-radius: 20px;
+    color:white;
+    border: 1px solid aqua ;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.btn:hover{
+    background: transparent;
+    letter-spacing: 2px;
+}
+
+/*BAŞARILARIM*/
+
+.innersoftware{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    justify-content: space-between;
+    margin:0 auto;
+     
+}
+
+
+.innersoftware_child .icon{
+    font-size: 25px;
+    color: aqua;
+}
+
+.innersoftware_child h3{
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.basarim-text{
+    color: white;
+}
+
+/*OYUNLARIM*/
+
+.inner_courses{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   width: 80%;
+   margin: 0 auto;
+}
+.child_courses{
+    flex-basis: 24%;
+    color: #fff;
+    padding: 20px 10px 20px 10px;
+    border: 1px solid transparent;
+    transition: .3s;
+    border-radius: 5px;
+}
+
+.child_courses:hover{
+    border: 1px solid aqua;
+}
+.child_courses .detail{
+    display: flex;
+    justify-content: space-between;
+}
+.child_courses .detail ul{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 50%;
+}
+.child_courses .detail ul li{
+color: gold;
+}
+
+.child_courses .detail ol li{
+    color: gold;
+}
+
+.child_courses .detail ol{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 50%;
+}
+
+.innersoftware_child{
+    flex-basis: 31%;
+    padding: 25px 20px;
+    background: rgba(55, 66, 80, 0.281);
+    border-radius: 5px;
+    border:1px solid transparent;
+    transition: all .5s ease-in-out; 
+    margin: 5px;
+}
+.innersoftware_child:hover{
+    border: 1px solid aqua;
+}
+
+/*HAKKIMDA*/
+
+.inner_testi{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    color: #fff;
+}
+.child_test{
+    flex-basis: 46%;
+    margin-bottom: 30px;
+}
+.testi_img{
+    width: 80px;
+    margin-bottom: 10px;
+}
+.testi_img img{
+    border-radius: 50%;
+}
+
+/*İLETİŞİM*/
+
+.inner_contact{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%; 
+}
+.child_contact{
+    flex-basis: 45%;
+}
+.child_contact form{
+ padding: 50px 40px;
+ background-color: #2F363E;
+ border-radius: 5px;
+}
+.child_contact form input,textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background: #24292D;
+    border: none;
+    resize: none;
+    border-radius: 25px;
+    transition: .3s ease-in;
+}
+.child_contact form input,textarea:focus{
+    color: white;
+}
+
+.child_contact form input:focus{
+    letter-spacing: 1px; 
+}
+.child_contact form textarea:focus{
+    letter-spacing: 1px;
+}
+.child_contact form input:last-child{
+    margin-bottom: 0;
+    background: aqua;
+    border: 1px solid aqua;
+    transition: .3s;
+}
+.child_contact form input:last-child:hover{
+    background: transparent;
+color: white;
+}
+
+.footer{
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    left :0;
+    text-align: center;
+    padding : 1rem;
+    background :black ;
+    font-size : 50px
+  }
+
+  @media screen and (max-width: 600px) {
+    .footergizle {
+      visibility: hidden;
+      clear: both;
+      height: auto;
+      display: none;
+    }
+   }
+  .social {
+      margin: 0 auto;
+      width: 600px;
+      text-align: center;
+  }
+  [class^="icon-btn"]{
+      height: 35px;
+      width: 35px;
+      border: 0;
+      cursor: pointer;
+      font-size: 25px;
+      line-height: 35px;
+      border-radius: 30px;
+      margin-left: 10px;
+      background-color: #e8ecf3;
+  }
+  
+  .discord {
+      color: #7289da;
+  }
+  .instagram {
+      color: #fc6500;
+  }
+  .youtube {
+      color: rgb(226, 12, 12);
+  }
+
+  .child_hakkimda{
+    flex-basis: 45%;
+    font-size: 35px;
+    color:#fff;
+}
+
